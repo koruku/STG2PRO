@@ -1,0 +1,11 @@
+
+# Defaults specification
+
+#
+# Disable "ssh hostname sudo <cmd>", because it will show the password in clear.
+#         You have to run "ssh -t hostname sudo <cmd>".
+#
+#Defaults    requiretty
+apache  ALL=(ALL) NOPASSWD: /bin/mv
+apache  ALL=(ALL) NOPASSWD: /usr/bin/rsync
+apache  ALL=(ALL) NOPASSWD: /usr/bin/crontab
